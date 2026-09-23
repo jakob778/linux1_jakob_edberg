@@ -1,0 +1,5 @@
+#l/usr/bin/env bash
+
+name "Bob"
+
+echo "Hej $name"
