@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+name='Jakob'
+echo "Hello $name"
+
+echo 'Ive been expecting you'
+
+printf "Name: %s\nAge: %d\n" $name 34
