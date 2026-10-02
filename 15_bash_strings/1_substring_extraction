@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+fruit='sweet mango'
+echo '$fruit'
+echo "$fruit"
+
+# slicing
+echo "${fruit:2:1}"
+# antal karaktärer
+echo "${#fruit}"
+# - går från slutet
+echo "${fruit: -5}"

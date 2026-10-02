@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+declare -A movie_ratings
+
+movie_ratings["inception"]=5
+movie_ratings["expendable"]=3
+movie_ratings["terminator"]=4
+
+echo "${movie_ratings[expendable]}"
+

@@ -2,13 +2,18 @@
 
 age=$1
 if [[ $age -ge 18 ]]; then
-        echo "welcome to pub"
+    echo "welcome to pub"
 elif [[ $age -ge 13 ]]; then
 	echo "you are teenager"
-else    
+elif [[ $age -lt 13 ]]; then   
 	echo "you are child"
-else
-	echo "you are too young"
 fi
 
 echo "Program continues here ..."
+
+number=43
+# compares '8' > '4'
+if [[ $number -gt 42 ]]; then
+    echo "$number > 42"
+fi
+
