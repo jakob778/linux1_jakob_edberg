@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+mkcd() {
+    mkdir -p "$1" && cd "$1"
+}
+
+file_exists() {
+# variables inside funcs have global scope    
+    # makes the varible local
+    local file="$1"
+
+
+  # if [[ -f "$file" ]]; then
+  #     return 0
+  # else    
+  #     return 1
+  # fi
+  [[ -f "$file" ]] || return 1
+}
+
+bak() {
+    local file="$1"
+    file_exists "$file"
+
+    local backup="$file.bak.$(date +%Y%m%d_%H%M%S)"
+    cp "$file" "$backup"
+
+}

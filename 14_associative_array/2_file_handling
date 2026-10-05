@@ -12,6 +12,8 @@ mkdir -p assets/cool_script
 # store what type of file it is
 # regular, executable, directory
 
+declare -A file_type
+
 for f in assets/*; do
     filename="${f#*/}"
     echo "$filename"
@@ -26,6 +28,5 @@ for f in assets/*; do
 done
 
 for f in "${!file_type[@]}"; do
-    echo "$f -> ${file_type[$f]}
-
-
+    echo "$f -> ${file_type[$f]}"
+done

@@ -11,4 +11,4 @@ echo "${fruits[-1]}"
 echo "${fruits[@]}"
 
 # slicing
-echo "${fruits[@]:1:2}"
+echo "${fruits[@]:0:3}"

@@ -6,5 +6,5 @@ movie_ratings["inception"]=5
 movie_ratings["expendable"]=3
 movie_ratings["terminator"]=4
 
-echo "${movie_ratings[expendable]}"
+echo "${movie_ratings[terminator]}"
 
